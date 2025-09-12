@@ -1,0 +1,140 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif, Arial;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f5e0d8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: background-image 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background-slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#loginPage, #signupPage {
+    display: none;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 30px 40px;
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    color: #c85a34;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.header p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+button, .action-btn {
+    background-color: #e88b65;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover, .action-btn:hover {
+    background-color: #c85a34;
+    transform: scale(1.05);
+}
+
+.login-form h2, .signup-form h2 {
+    color: #c85a34;
+    margin-bottom: 15px;
+}
+
+.subtext {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 0.95em;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #e88b65;
+    outline: none;
+}
+
+.switch-link {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.switch-link a {
+    color: #c85a34;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 0.9em;
+    margin-top: 10px;
+    min-height: 1.2em;
+}

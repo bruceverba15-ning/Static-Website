@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KULTURANG PINOY! - Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="background-slider"></div>
+
+    <div class="container" id="landingPage">
+        <div class="box">
+            <header class="header">
+                <h1>Tara Na, Byahe Tayo!</h1>
+                <p>Discover the beauty and warmth of the Philippines.</p>
+            </header>
+            <div class="button-container">
+                <button class="action-btn" onclick="showLogin()">Mag Log In</button>
+                <button class="action-btn" onclick="showSignup()">Mag Sign Up</button>
+            </div>
+            <header class="header">
+                <p>This website is brought to you by Bruce R. Verba of BCS22.
+                    <b> All rights reserved April 30, 2025.</p>
+            </header>
+        </div>
+    </div>
+
+    <div class="container" id="loginPage" style="display: none;">
+        <div class="box">
+            <form class="login-form" onsubmit="return validateLogin()">
+                <h2>Mag Log In</h2>
+                <p class="subtext">Ipasok ang iyong detalye para makapasok.</p>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                <p id="login-error-message" class="error-message"></p>
+            </form>
+            <p class="switch-link">Wala pang account? <a href="#" onclick="showSignup()">Mag Sign Up</a></p>
+            <p class="switch-link">Nakalimutan ang password? <a href="#" onclick="forgotPassword()">Tulungan mo ako!</a></p>
+        </div>
+    </div>
+
+    <div class="container" id="signupPage" style="display: none;">
+        <div class="box">
+            <form class="signup-form" onsubmit="return validateSignup()">
+                <h2>Mag Sign Up</h2>
+                <p class="subtext">Gumawa ng account para makasali.</p>
+                <input type="text" id="signup-username" placeholder="Username" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+                <p id="signup-error-message" class="error-message"></p>
+            </form>
+            <p class="switch-link">Mayroon nang account? <a href="#" onclick="showLogin()">Mag Log In</a></p>
+        </div>
+    </div>
+
+    <script src="scrpit.js"></script>
+</body>
+
+</html>

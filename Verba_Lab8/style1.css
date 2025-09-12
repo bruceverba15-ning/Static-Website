@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lato:wght@400&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fdf6f1;
+}
+
+.parallax-container {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    border-bottom: 4px solid #c5b8af;
+}
+
+.parallax-container:last-of-type {
+    border-bottom: none;
+}
+
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(0.8);
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.content h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.content h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #f0e68c;
+}
+
+.content p {
+    font-size: 1.1em;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.content strong {
+    color: #e88b65;
+    font-weight: bold;
+}
+
+.footer-nav {
+    padding: 40px 20px;
+    background-color: #dcb1a0;
+    color: #fff;
+    text-align: center;
+    border-top: 4px solid #c5b8af;
+}
+
+.footer-nav p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.footer-nav .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    background-color: #e88b65;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.action-btn:hover {
+    background-color: #c85a34;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2em;
+    }
+    .content h2 {
+        font-size: 1.5em;
+    }
+    .content p {
+        font-size: 1em;
+    }
+    .parallax-container {
+        min-height: 50vh;
+        border-bottom: 3px solid #c5b8af;
+    }
+    .footer-nav {
+         border-top: 3px solid #c5b8af;
+    }
+
+    .content {
+        width: 90%;
+        padding: 25px;
+    }
+    .parallax {
+    }
+}
